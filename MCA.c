@@ -8,7 +8,7 @@ void main() {
    int gd = DETECT, gm;
    int x, y, r;
    void Drawcircle(int x, int y, int r);
-   printf("Enter the Mid points and Radius:",&&&&);
+   printf("Enter the Mid points and Radius:",&x,&y,&r);
    scanf("%d%d%d", &x, &y, &r);
    initgraph(&gd, &gm, "C:/TURBOC3/BGI");
    Drawcircle(x, y, r);
@@ -32,11 +32,11 @@ void Drawcircle(int x1, int y1, int r) {
    }
 }
 
-void cliplot(int x0, int y0, int x, int y) {
-   putpixel(xctr + x, y0 + y, 1);
-   putpixel(xctr - x, y0 + y, 1);
-   putpixel(xctr + x, y0 - y, 1);
-   putpixel(xctr - x, y0 - y, 1);
+void cliplot(int xctr, int yctr, int x, int y) {
+   putpixel(xctr + x, yctr + y, 1);
+   putpixel(xctr - x, yctr + y, 1);
+   putpixel(xctr + x, yctr - y, 1);
+   putpixel(xctr - x, yctr - y, 1);
    putpixel(xctr + y, yctr + x, 1);
    putpixel(xctr - y, yctr + x, 1);
    putpixel(xctr + y, yctr - x, 1);
