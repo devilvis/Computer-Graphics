@@ -1,5 +1,5 @@
+/*Midpoint Circle Algorithm */
 
-/*Midpoint Circle Algorithm Example Program In C */
 #include<stdio.h>
 #include<conio.h>
 #include<graphics.h>
